@@ -1,0 +1,371 @@
+html{
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: arial;
+}
+
+body {
+  background-color: black;
+}
+.home {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+a {
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+  color: rgb(226, 225, 225);
+}
+nav {
+  position: fixed;
+  width: 100%;
+  height: 123px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease-in-out;
+  background: none;
+  z-index: 1;
+}
+ul {
+  display: flex;
+  list-style: none;
+}
+li {
+  margin: 19px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+li:hover a{
+  color: rgb(2, 218, 2);
+}
+.fa-magnifying-glass {
+  margin: 28px;
+  margin-left: 250px;
+  margin-right: 7px;
+  color: rgb(180, 180, 180);
+}
+.navbar {
+  position: relative;
+  width: 1124px;
+  display: flex;
+  top: 24px;
+  align-items: center;
+  border-bottom: 1px solid rgb(226, 225, 225);
+  justify-content: center;
+}
+.logo {
+  margin-right: 217px;
+  font-weight: 600;
+}
+.logo span {
+  color: rgb(2, 218, 2);
+}
+.back-img {
+  position: absolute;
+  width: 100%;
+  display: block;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+.bg {
+  width: 100%;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+.info {
+  position: absolute;
+  width: 80%;
+  height: 305px;
+  top: 260px;
+  left: 118px;
+}
+.info h1 {
+  font-size: 80px;
+  color: white;
+  margin: 20px;
+  font-weight: 900;
+}
+.info p {
+  font-size: 16px;
+  margin: 20px;
+  color: rgb(180, 180, 180);
+  width: 476px;
+}
+.info button {
+  font-size: 16px;
+  margin: 20px;
+  padding: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: rgba(0, 255, 255, 0);
+  border: 1px solid white;
+  color: rgb(255, 255, 255);
+  transition: 0.3s ease-in-out;
+}
+.info button:hover {
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+}
+.side {
+  position: absolute;
+  width: 40px;
+  height: 250px;
+  top: 240px;
+  right: 100px;
+  display: block;
+}
+.side span {
+  margin: 10px;
+  font-size: 20px;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+.side .active {
+  font-size: 40px;
+}
+/* .side .active::after {
+  content: " ";
+  position: absolute;
+  width: 100px;
+  height: 2px;
+  top: 30px;
+  left: 50px;
+  background-color: rgb(255, 255, 255);
+} */
+.about {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  top: 140%;
+  align-items: center;
+  color: rgb(180, 180, 180);
+}
+.about h1 {
+  margin: 30px;
+}
+.about p {
+  text-align: center;
+  font-size: 12px;
+  width: 900px;
+}
+.ab-img {
+  margin: 100px;
+  width: 300px;
+}
+.ab_div {
+  display: grid;
+  width: 80%;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  margin: 100px;
+}
+.ab_card {
+  width: 300px;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 10px;
+  background-color: rgb(10 10 10);
+}
+.ab_card h1 {
+  font-size: 18px;
+}
+.ab_card p {
+  width: 250px;
+  font-size: 12px;
+}
+.ab_card .fa-solid {
+  color: rgb(2, 218, 2);
+  font-size: 30px;
+}
+.ab_card a {
+  margin-top: 20px;
+  color: rgb(2, 218, 2);
+  padding: 8px;
+}
+.contact{
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 300%;
+}
+.contact .cont_side{
+    width: 40%;
+    margin: 100px;
+    color: white;
+}
+.contact .cont_side h1{
+    font-size: 60px;
+}
+.contact .cont_side p{
+    margin-top: 20px;
+}
+.con_info{
+    margin-top: 10px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+}
+.con_info i{
+    background-color: rgba(39, 39, 39, 0.356);
+    padding: 16px;
+    border-radius: 50%;
+}
+.con_info p{
+    margin: 14px;
+}
+.contact form{
+    color: white;
+    margin: 100px;
+    width: 35%;
+}
+.contact form p{
+    margin-bottom: 35px;
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.contact form input,textarea{
+    background-color: rgba(39, 39, 39, 0.356);
+    border: none;
+    margin: 10px;
+    color: white;
+    padding: 10px;
+    width: 400px;
+}
+.contact form input[type="submit"]{
+    color: white;
+    width: 150px;
+    padding: 10px;
+    background-color: rgb(2, 218, 2);
+}
+.footer{
+    position: absolute;
+    color: white;
+    width: 100%;
+    height: 50%;
+    top: 400%;
+    /* grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); */
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(0, 0, 0);
+    z-index: -1;
+    box-shadow: 0px -20px 295px 168px black;
+}
+.ft_right{
+    /* background-color: aqua; */
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ft_right ul{
+    display: block;
+    width: 220px;
+    /* background-color: brown; */
+    text-align: center;
+    margin: 10px;
+}
+.ft_left{
+    /* background-color: rgb(0, 17, 255); */
+    width: 50%;
+    padding: 40px;
+}
+.ft_left h1{
+    margin: 15px;
+}
+.ft_left p{
+    margin: 15px;
+    margin-top: 30px;
+    font-size: 14px;
+}
+.ft_left .social{
+    margin: 15px;
+    font-size: 20px;
+    margin-top: 40px;
+}
+.ft_left .social a{
+    margin: 10px;
+}
+.ft_bottom{
+    width: 100%;
+    padding: 30px;
+}
+.ft_bottom p{
+    font-size: 14px;
+    border-top: 1px solid white;
+    padding: 20px;
+}
+.log_area, .srch_area{
+    position: fixed;
+    width: 100%;
+    color: white;
+    height: 100%;
+    background-color: rgba(5, 26, 0, 0.459);
+    z-index: 3;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.log_form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(5, 5, 5, 0.904);
+    padding: 80px;
+    justify-content: center;
+}
+.log_form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.log_form form input{
+    margin: 20px;
+    padding: 10px;
+}
+.log_form form input[type="submit"]{
+    margin-top: 60px;
+    background-color: rgb(2, 218, 2);
+    border: none;
+    color: white;
+    padding: 15px;
+    width: 150px;
+}
+.log_form form input[type="text"],
+input[type="password"]{
+    background-color: rgba(102, 85, 85, 0);
+    color: white;
+    outline: none;
+    width: 300px;
+    border: none;
+    border-bottom: 1px solid white;
+}
+.log_form h1{
+    margin-bottom: 30px;
+}
+.log_form .fa-xmark{
+    position: relative;
+    top: -40px;
+    left: 200px;
+    font-size: 20px;
+    color: rgb(172, 172, 172);
+}
